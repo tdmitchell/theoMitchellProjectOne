@@ -263,6 +263,10 @@ template {
   margin: 0 auto;
 }
 
+header {
+  background-image: url(../assets/images/banner-image.jpg);
+}
+
 footer {
   background-color: black;
   color: white;
