@@ -234,6 +234,7 @@ template {
   display: none;
 }
 
+/* 1.2 BORDER-BOX */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -251,4 +252,27 @@ template {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  width: 100%;
+}
+
+footer span {
+  color: red;
 }
