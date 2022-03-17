@@ -1,3 +1,17 @@
-header {
-  background-image: url(../assets/images/banner-image.jpg);
+.blogPage header {
+  background-image: url(../assets/images/blog-image-1.jpg);
+  height: 50vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
+
+.contactPage header {
+  background-image: url(../assets/images/contact-image-1.jpg);
+  height: 50vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+// .contactPage header {
+//   background-image: url(../assets/images/banner-image.jpg);
+// }

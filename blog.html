@@ -5,30 +5,97 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>Blog</title>
 
 
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
-<body>
+<body class="blogPage">
   <header>
-
+    <div class="wrapper">
+      <div class="nav">
+        <h1>Beachstays</h1>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <h2>Blog</h2>
   </header>
 
   <main>
-
     <section class="blogPost">
 
+      <div class="detailedTrip">
+        <div class="userImage">
+          <img src="./assets/images/post-image.jpg" alt="XXXXXX">
+        </div>
+        <p>Five days of ocean seas</p>
+        <p class="date">Monday January 21st, 2019 by Bora</p>
+        <p class="comm">asdada dada sd adasd asda adsd asdasdd as da d aslkdjs salkdj lsakjd lksajd lkas jdlkajdlajsd
+          lkajd lkasjld kjalsdj lakjd lkasj dlkajsld jasldj lajs dlajsdlkj aldksajd lkajsdlksajdl asjdlajsdla</p>
+      </div>
     </section>
 
 
-    <section class="ourMission">
-
-    </section>
+    <aside class="ourMission">
+      <div class="ourMission">
+        <div class="userImage">
+          <img src="./assets/images/sidebar-image.jpg" alt="XXXXXX">
+        </div>
+        <p>Our Mission</p>
+        <p class="comm">asdada dada sd adasd asda adsd asdasdd as da d aslkdjs salkdj lsakjd lksajd lkas jdlkajdlajsd
+          lkajd lkasjld kjalsdj lakjd lkasj dlkajsld jasldj lajs dlajsdlkj aldksajd lkajsdlksajdl asjdlajsdla</p>
+        <p>Recent Posts</p>
+        <ul>
+          <li><a href="#">Donec facilisis tortor ut</a></li>
+          <li><a href="#">Augue lacinia at viverra</a></li>
+          <li><a href="#">Semper sed sapien metus</a></li>
+          <li><a href="#">Scelerisque nec pharetra</a></li>
+        </ul>
+      </div>
+    </aside>
 
     <section class="comments">
+      <div class="wrapper">
+        <p>Comments:</p>
+        <div class="wrapper blogComment1">
+          <div class="userImage">
+            <img src="./assets/images/comment-image.jpg" alt="XXXXX">
+          </div>
+          <div class="userComment">
+            <p class="date">Tuesday October 9th, 2019 by Reyansh</p>
+            <p class="comm">asdada dada sd adasd asda adsd asdasdd as da d</p>
+          </div>
+        </div>
 
+        <div class="wrapper blogComment2">
+          <div class="userImage">
+            <img src="./assets/images/comment-image2.jpg" alt="XXXXXX">
+          </div>
+          <div class="userComment">
+            <p class="date">Wednesday October 10th, 2019 by Olivia</p>
+            <p class="comm">asdada dada sd adasd asda adsd asdasdd as da d</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <form action="???" class="sendComment">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="name" placeholder="Name">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="email" placeholder="Email address">
+          <label for="Comment">Message</label>
+          <textarea name="Comment" id="Comment" cols="30" rows="10" placeholder="Comment"></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+      </div>
+      </form>
     </section>
   </main>
 

@@ -263,8 +263,55 @@ template {
   margin: 0 auto;
 }
 
-header {
-  background-image: url(../assets/images/banner-image.jpg);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.blogPage header {
+  background-image: url(../assets/images/blog-image-1.jpg);
+  height: 50vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contactPage header {
+  background-image: url(../assets/images/contact-image-1.jpg);
+  height: 50vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.blogPost {
+  background-color: aqua;
+}
+
+.ourMission {
+  background-color: blue;
+}
+
+.comments {
+  background-color: red;
+}
+
+form {
+  background-color: pink;
+}
+
+.blogComment1 {
+  background-color: yellow;
+}
+
+.blogComment2 {
+  background-color: lightyellow;
+}
+
+.detailedTrip {
+  background-color: green;
+}
+
+.ourMission {
+  background-color: lightgreen;
 }
 
 footer {
