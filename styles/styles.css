@@ -282,6 +282,34 @@ template {
   background-repeat: no-repeat;
 }
 
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  width: 100%;
+}
+
+footer span {
+  color: red;
+}
+
+.planAheadImageContainer {
+  background-image: url(./../assets/images/left-image.jpg);
+}
+
+.newLocationsImageContainer {
+  background-image: url(./../assets/images/right-image.jpg);
+}
+
+#imagesContainer,
+#planAhead,
+#newLocations {
+  background-color: aquamarine;
+}
+
 .blogPost {
   background-color: aqua;
 }
@@ -312,18 +340,4 @@ form {
 
 .ourMission {
   background-color: lightgreen;
-}
-
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-
-footer p {
-  width: 100%;
-}
-
-footer span {
-  color: red;
 }
