@@ -1,0 +1,28 @@
+.likeButton {
+  background-color: $twilightBlue;
+  // width: 250px;
+  padding: 18px 36px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $greenishCyan;
+  }
+}
+
+.nav {
+  display: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $greenishCyan;
+  }
+}
+
+.hamburgerMenu {
+  //--------------                                    CODE TO HIDE IT HERE
+}

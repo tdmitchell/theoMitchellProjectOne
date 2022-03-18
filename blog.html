@@ -7,29 +7,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
 
-
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
-<body class="blogPage">
-  <header>
+<body id="blogPage">
+  <header id="header">
+    <nav class="menu">
+      <div class="wrapper">
+        <div class="logoContainer">
+          <p class="logo">Beachstays</p>
+        </div> <!-- ./logoContainer -->
+
+        <div class="navBar">
+          <ul>
+            <li><a href="#" class="nav">Home</a></li>
+            <li><a href="#welcomePage" class="nav">About</a></li>
+            <li><a href="#blogPage" class="nav">Blog</a></li>
+            <li><a href="#contactPage" class="nav">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- "Hamburger menu"  -->
+        <a href="#" class="hamburgerMenu nav">
+          <i class="fa fa-bars showIcon"></i>
+        </a>
+      </div> <!-- ./wrapper -->
+    </nav>
+
     <div class="wrapper">
-      <div class="nav">
-        <h1>Beachstays</h1>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+      <div class="headerText center">
+        <h2>Blog</h2>
       </div>
-    </div>
-    <h2>Blog</h2>
+    </div> <!-- ./wrapper -->
   </header>
 
   <main>
     <section class="blogPost">
-
       <div class="detailedTrip">
         <div class="userImage">
           <img src="./assets/images/post-image.jpg" alt="XXXXXX">

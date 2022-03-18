@@ -1,17 +1,57 @@
-.blogPage header {
+#welcomePage header {
+  background-image: url(../assets/images/home-image-1.jpg);
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#blogPage header {
   background-image: url(../assets/images/blog-image-1.jpg);
-  height: 50vh;
+  height: 80vh;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.contactPage header {
+#contactPage header {
   background-image: url(../assets/images/contact-image-1.jpg);
-  height: 50vh;
+  height: 80vh;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-// .contactPage header {
-//   background-image: url(../assets/images/banner-image.jpg);
-// }
+.menu {
+  padding-top: 30px;
+  .hamburgerMenu {
+    display: none; //                                   FIND BETTER SOLUTION TO HIDE
+  }
+
+  .wrapper {
+    justify-content: space-between;
+
+    .navBar ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      a {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+#welcomePage .headerText {
+  text-align: left;
+  margin-top: 30vh;
+  margin-left: 450px;
+}
+
+#blogPage .headerText {
+  margin-top: 35vh;
+  margin-left: 10px;
+}
+
+#contactPage .headerText {
+  margin-top: 35vh;
+  margin-left: 10px;
+}

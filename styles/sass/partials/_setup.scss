@@ -196,6 +196,13 @@ template {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// 1.3 sr-only
 .sr-only {
   position: absolute;
   width: 1px;
