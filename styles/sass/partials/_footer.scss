@@ -1,13 +1,10 @@
 footer {
-  background-color: black;
-  color: white;
+  background-color: $black;
+  color: $iceBlue;
   text-align: center;
 }
 
 footer p {
   width: 100%;
-}
-
-footer span {
-  color: red;
+  padding: 10px;
 }
