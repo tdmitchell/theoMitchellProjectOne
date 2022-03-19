@@ -1,1 +1,78 @@
+// messageForm
+// commentForm
+
+// sendCommentForm
+// sendMessageForm
+
+// commentContainer
+// messageContainer
+
 // box-shadow
+// 1.5 Form
+.messageForm,
+.commentForm {
+  // background-color: red;
+  display: flex;
+  // flex-direction: column;
+  width: 50%;
+  margin-left: 10%;
+  margin-bottom: 60px;
+
+  input,
+  textarea {
+    @include formStyle;
+
+    padding: 0 0 10px 5px;
+    border: none;
+    resize: none;
+
+    margin-bottom: 40px;
+    &::placeholder {
+      font-weight: bold;
+      font-size: 0.8rem;
+      color: $black;
+      opacity: 1;
+      line-height: 1.2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  input {
+    // border: none;
+    border-bottom: 2px solid $greenishCyan;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 130px;
+    border: 2px solid $greenishCyan;
+    padding: 20px;
+  }
+  .sendMessageForm,
+  .sendCommentForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nameEmailContainer,
+  .messageContainer,
+  .commentContainer {
+    flex-basis: 45%;
+    justify-content: space-between;
+  }
+
+  button {
+    // background-color: $twilightBlue;
+    line-height: 35px;
+  }
+}
+
+.messageForm {
+  background-color: white;
+  position: relative;
+  top: -100px;
+  padding: 40px;
+  box-shadow: 15px 15px $greenishCyan;
+}

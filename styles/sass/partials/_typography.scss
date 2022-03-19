@@ -27,11 +27,10 @@ h5,
 h6,
 .nav,
 .placeholder {
-  font-family: $lato;
+  font-family: $latoFont;
 }
 
-body,
-.placeholder {
+body {
   font-size: 1rem;
   color: $black;
   line-height: 1.6rem;
@@ -42,9 +41,9 @@ body {
   font-weight: normal;
 }
 
-.placeholder {
-  font-weight: lighter;
-}
+// .placeholder {
+//   font-weight: lighter;
+// }
 
 .nav,
 .likeButton {
@@ -100,7 +99,28 @@ h5 {
   letter-spacing: 3.8px;
 }
 
+h5 {
+  color: $twilightBlue;
+}
+
 h6 {
   font-size: 1.5rem;
   letter-spacing: 3.2px;
+}
+
+.blogPost h4 {
+  color: $spruce;
+}
+
+.date {
+  color: $twilightBlue;
+  // font-style: italic;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.linkType {
+  color: $spruce;
 }

@@ -1,13 +1,22 @@
-.planAheadImageContainer {
-  background-image: url(./../assets/images/left-image.jpg);
-}
+// .planAheadImageContainer {
+//   background-image: url(./../assets/images/left-image.jpg);
+// }
 
-.newLocationsImageContainer {
-  background-image: url(./../assets/images/right-image.jpg);
-}
+// .newLocationsImageContainer {
+//   background-image: url(./../assets/images/right-image.jpg);
+// }
 
 #imagesContainer,
 #planAhead,
 #newLocations {
   background-color: aquamarine;
+}
+
+.secondNav {
+  i::before {
+    font-family: FontAwesome;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: blue;
+  }
 }

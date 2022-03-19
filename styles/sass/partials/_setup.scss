@@ -215,3 +215,10 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+// 1.4 Make padding, border and margin part of the element’s width
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

@@ -7,7 +7,7 @@
 
 #blogPage header {
   background-image: url(../assets/images/blog-image-1.jpg);
-  height: 80vh;
+  height: 60vh;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -21,9 +21,6 @@
 
 .menu {
   padding-top: 30px;
-  .hamburgerMenu {
-    display: none; //                                   FIND BETTER SOLUTION TO HIDE
-  }
 
   .wrapper {
     justify-content: space-between;
@@ -38,6 +35,10 @@
       }
     }
   }
+
+  .hamburgerMenu {
+    display: none; //                                   FIND BETTER SOLUTION TO HIDE
+  }
 }
 
 #welcomePage .headerText {
@@ -47,11 +48,11 @@
 }
 
 #blogPage .headerText {
-  margin-top: 35vh;
-  margin-left: 10px;
+  margin-top: 15vh;
+  margin-left: 200px;
 }
 
 #contactPage .headerText {
-  margin-top: 35vh;
-  margin-left: 10px;
+  margin-top: 25vh;
+  margin-left: 130px;
 }

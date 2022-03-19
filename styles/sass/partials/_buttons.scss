@@ -3,9 +3,9 @@
   // width: 250px;
   padding: 18px 36px;
   text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
-  text-decoration: none;
+  // cursor: pointer;
+  // transition: 0.3s;
+  // text-decoration: none;
 
   &:hover,
   &:focus {
@@ -25,4 +25,13 @@
 
 .hamburgerMenu {
   //--------------                                    CODE TO HIDE IT HERE
+}
+
+.linkType {
+  color: $twilightBlue;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
 }

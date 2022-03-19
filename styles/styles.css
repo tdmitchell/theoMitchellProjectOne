@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -261,6 +262,11 @@ template {
   overflow: hidden;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 125%;
 }
@@ -282,8 +288,7 @@ h6,
   font-family: "Lato", sans-serif;
 }
 
-body,
-.placeholder {
+body {
   font-size: 1rem;
   color: #2c2c2c;
   line-height: 1.6rem;
@@ -292,10 +297,6 @@ body,
 
 body {
   font-weight: normal;
-}
-
-.placeholder {
-  font-weight: lighter;
 }
 
 .nav,
@@ -352,9 +353,28 @@ h5 {
   letter-spacing: 3.8px;
 }
 
+h5 {
+  color: #063974;
+}
+
 h6 {
   font-size: 1.5rem;
   letter-spacing: 3.2px;
+}
+
+.blogPost h4 {
+  color: #0c5f4c;
+}
+
+.date {
+  color: #063974;
+}
+.date span {
+  font-weight: bold;
+}
+
+.linkType {
+  color: #0c5f4c;
 }
 
 * {
@@ -366,6 +386,14 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,14 +403,17 @@ ul {
   margin: 0 auto;
 }
 
+img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
 .likeButton {
   background-color: #063974;
   padding: 18px 36px;
   text-align: center;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  text-decoration: none;
 }
 .likeButton:hover, .likeButton:focus {
   color: #50e3c2;
@@ -396,6 +427,13 @@ ul {
   color: #50e3c2;
 }
 
+.linkType {
+  color: #063974;
+}
+.linkType:hover, .linkType:focus {
+  opacity: 0.3;
+}
+
 #welcomePage header {
   background-image: url(../assets/images/home-image-1.jpg);
   height: 100vh;
@@ -405,7 +443,7 @@ ul {
 
 #blogPage header {
   background-image: url(../assets/images/blog-image-1.jpg);
-  height: 80vh;
+  height: 60vh;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -419,9 +457,6 @@ ul {
 
 .menu {
   padding-top: 30px;
-}
-.menu .hamburgerMenu {
-  display: none;
 }
 .menu .wrapper {
   -webkit-box-pack: justify;
@@ -443,6 +478,9 @@ ul {
 .menu .wrapper .navBar ul a {
   padding-left: 30px;
 }
+.menu .hamburgerMenu {
+  display: none;
+}
 
 #welcomePage .headerText {
   text-align: left;
@@ -451,13 +489,13 @@ ul {
 }
 
 #blogPage .headerText {
-  margin-top: 35vh;
-  margin-left: 10px;
+  margin-top: 15vh;
+  margin-left: 200px;
 }
 
 #contactPage .headerText {
-  margin-top: 35vh;
-  margin-left: 10px;
+  margin-top: 25vh;
+  margin-left: 130px;
 }
 
 footer {
@@ -469,14 +507,7 @@ footer {
 footer p {
   width: 100%;
   padding: 10px;
-}
-
-.planAheadImageContainer {
-  background-image: url(./../assets/images/left-image.jpg);
-}
-
-.newLocationsImageContainer {
-  background-image: url(./../assets/images/right-image.jpg);
+  margin: 0;
 }
 
 #imagesContainer,
@@ -485,34 +516,268 @@ footer p {
   background-color: aquamarine;
 }
 
-.blogPost {
-  background-color: aqua;
-}
-
-.ourMission {
+.secondNav i::before {
+  font-family: FontAwesome;
+  padding: 15px;
+  border-radius: 50%;
   background-color: blue;
 }
 
-.comments {
-  background-color: red;
+#blogPage main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-form {
-  background-color: pink;
+.blogPost {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  position: relative;
+  top: -60px;
 }
 
-.blogComment1 {
-  background-color: yellow;
+.blogImageContainer {
+  -webkit-box-shadow: 15px 15px #50e3c2;
+          box-shadow: 15px 15px #50e3c2;
+}
+.blogImageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.blogComment2 {
-  background-color: lightyellow;
+.blogTextContainer {
+  position: relative;
+  right: -15px;
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 50px;
+  border-right: 5px solid #50e3c2;
+  border-bottom: 5px solid #50e3c2;
 }
 
-.detailedTrip {
-  background-color: green;
+p {
+  margin-bottom: 30px;
 }
 
 .ourMission {
-  background-color: lightgreen;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.blogImageContainer {
+  width: 100%;
+  height: auto;
+}
+
+.ourMissionRecentPosts {
+  padding-top: 5rem;
+  padding-left: 10rem;
+}
+
+.ourMissionTextContainer {
+  margin-bottom: 30px;
+}
+.ourMissionTextContainer p {
+  margin-bottom: 10px;
+}
+
+.recentPosts ul li::before {
+  content: "•";
+  color: #50e3c2;
+  font-weight: bold;
+  display: inline-block;
+  width: 3em;
+  margin-left: -1em;
+  padding-left: 2rem;
+}
+
+.comments {
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10%;
+}
+.comments .userComments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+}
+.comments .userComments .userImageContainer {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  padding-right: 20px;
+}
+.comments .userComments .userCommentContainer {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+}
+.comments .userComments .userCommentContainer p {
+  margin-bottom: 0;
+}
+
+#contactPage main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.messageForm {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.companyInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  padding: 60px;
+}
+.companyInfo p {
+  margin-bottom: 5px;
+}
+.companyInfo .socialIcons a {
+  padding-right: 10px;
+}
+.companyInfo .emailContainer {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.messageForm,
+.commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-left: 10%;
+  margin-bottom: 60px;
+}
+.messageForm input,
+.messageForm textarea,
+.commentForm input,
+.commentForm textarea {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  padding: 0 0 10px 5px;
+  border: none;
+  resize: none;
+  margin-bottom: 40px;
+}
+.messageForm input::-webkit-input-placeholder, .messageForm textarea::-webkit-input-placeholder, .commentForm input::-webkit-input-placeholder, .commentForm textarea::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #2c2c2c;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.messageForm input::-moz-placeholder, .messageForm textarea::-moz-placeholder, .commentForm input::-moz-placeholder, .commentForm textarea::-moz-placeholder {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #2c2c2c;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.messageForm input:-ms-input-placeholder, .messageForm textarea:-ms-input-placeholder, .commentForm input:-ms-input-placeholder, .commentForm textarea:-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #2c2c2c;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.messageForm input::-ms-input-placeholder, .messageForm textarea::-ms-input-placeholder, .commentForm input::-ms-input-placeholder, .commentForm textarea::-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #2c2c2c;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.messageForm input::placeholder,
+.messageForm textarea::placeholder,
+.commentForm input::placeholder,
+.commentForm textarea::placeholder {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #2c2c2c;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.messageForm input,
+.commentForm input {
+  border-bottom: 2px solid #50e3c2;
+}
+.messageForm textarea,
+.commentForm textarea {
+  width: 100%;
+  min-height: 130px;
+  border: 2px solid #50e3c2;
+  padding: 20px;
+}
+.messageForm .sendMessageForm,
+.messageForm .sendCommentForm,
+.commentForm .sendMessageForm,
+.commentForm .sendCommentForm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.messageForm .nameEmailContainer,
+.messageForm .messageContainer,
+.messageForm .commentContainer,
+.commentForm .nameEmailContainer,
+.commentForm .messageContainer,
+.commentForm .commentContainer {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.messageForm button,
+.commentForm button {
+  line-height: 35px;
+}
+
+.messageForm {
+  background-color: white;
+  position: relative;
+  top: -100px;
+  padding: 40px;
+  -webkit-box-shadow: 15px 15px #50e3c2;
+          box-shadow: 15px 15px #50e3c2;
 }

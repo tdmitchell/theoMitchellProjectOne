@@ -3,9 +3,20 @@
   padding: 0;
 }
 
+// body {
+//   width: 1440px;
+// }
+
 ul {
   list-style: none;
   // overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .wrapper {
@@ -15,60 +26,10 @@ ul {
   margin: 0 auto;
 }
 
-// /* 2. GENERAL STYLES */
-// /* 2.1 FONTS */
-// /* FONT-FAMILY */
-// body,
-// .h2Like {
-//   font-family: "Cabin", Arial, sans-serif;
-// }
-
-// .logo,
-// .sideLogo,
-// .aboutTasty,
-// .blogTitle {
-//   font-family: "Great Vibes", fantasy;
-// }
-
-// i {
-//   font-family: FontAwesome;
-//   font-style: normal;
-//   color: f8f8f8;
-//   margin-left: -30px;
-//   line-height: 2.5rem;
-// }
-
-// /* FONT-SIZE */
-// html {
-//   font-size: 125%;
-// }
-
-// body,
-// .button {
-//   font-size: 0.9rem;
-// }
-
-// .menu {
-//   font-size: 1rem;
-// }
-
-// h1 {
-//   font-size: 4rem;
-//   font-weight: normal;
-// }
-
-// h2,
-// .sideLogo {
-//   font-size: 2.1rem;
-//   line-height: 2.4rem;
-// }
-
-// h3 {
-//   font-size: 1.6rem;
-//   line-height: 1.5rem;
-// }
-
-// h4 {
-//   font-size: 1.2rem;
-//   line-height: 1.5rem;
-// }
+// Make image fit the parent size (do NOT bleed out it's size) and eliminate white space
+img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
