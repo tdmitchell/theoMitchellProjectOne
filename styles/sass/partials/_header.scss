@@ -1,24 +1,4 @@
-#welcomePage header {
-  background-image: url(../assets/images/home-image-1.jpg);
-  height: 100vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-#blogPage header {
-  background-image: url(../assets/images/blog-image-1.jpg);
-  height: 60vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-#contactPage header {
-  background-image: url(../assets/images/contact-image-1.jpg);
-  height: 80vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
+// 1.1 Navagation Menu
 .menu {
   padding-top: 30px;
 
@@ -40,19 +20,77 @@
     display: none; //                                   FIND BETTER SOLUTION TO HIDE
   }
 }
+// ----------------------------- END ----------------------------------
 
-#welcomePage .headerText {
-  text-align: left;
-  margin-top: 30vh;
-  margin-left: 450px;
+// 1.2 Welcome (index) Header
+#welcomePage header {
+  background-image: url(../assets/images/home-image-1.jpg);
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  .imagesContainer {
+    width: 600px;
+    max-width: 700px;
+    position: absolute;
+    left: 0;
+    top: 35vh;
+  }
+
+  .headerText {
+    text-align: left;
+    margin-top: 30vh;
+    margin-left: 400px;
+    z-index: 10;
+  }
 }
 
-#blogPage .headerText {
-  margin-top: 15vh;
-  margin-left: 200px;
+// #welcomePage .headerText {
+//   text-align: left;
+//   margin-top: 30vh;
+//   margin-left: 400px;
+//   z-index: 10;
+// }
+
+// #header .imagesContainer {
+//   width: 600px;
+//   max-width: 700px;
+//   position: absolute;
+//   left: 0;
+//   top: 35vh;
+// }
+// ----------------------------- END ----------------------------------
+
+// 1.3 Blog Header
+#blogPage header {
+  background-image: url(../assets/images/blog-image-1.jpg);
+  height: 60vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  .headerText {
+    margin-top: 15vh;
+    margin-left: 200px;
+  }
+}
+
+// #blogPage .headerText {
+//   margin-top: 15vh;
+//   margin-left: 200px;
+// }
+// ----------------------------- END ----------------------------------
+
+// 1.4 Blog Header
+#contactPage header {
+  background-image: url(../assets/images/contact-image-1.jpg);
+  height: 80vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #contactPage .headerText {
   margin-top: 25vh;
   margin-left: 130px;
 }
+
+// ----------------------------- END ----------------------------------

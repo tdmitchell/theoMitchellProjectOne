@@ -20,7 +20,7 @@ section {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0.4em 0;
 }
 
 figcaption,
@@ -353,6 +353,10 @@ h5 {
   letter-spacing: 3.8px;
 }
 
+h4 {
+  color: #0c5f4c;
+}
+
 h5 {
   color: #063974;
 }
@@ -434,27 +438,6 @@ img {
   opacity: 0.3;
 }
 
-#welcomePage header {
-  background-image: url(../assets/images/home-image-1.jpg);
-  height: 100vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-#blogPage header {
-  background-image: url(../assets/images/blog-image-1.jpg);
-  height: 60vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-#contactPage header {
-  background-image: url(../assets/images/contact-image-1.jpg);
-  height: 80vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
 .menu {
   padding-top: 30px;
 }
@@ -482,15 +465,42 @@ img {
   display: none;
 }
 
-#welcomePage .headerText {
+#welcomePage header {
+  background-image: url(../assets/images/home-image-1.jpg);
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#welcomePage header .imagesContainer {
+  width: 600px;
+  max-width: 700px;
+  position: absolute;
+  left: 0;
+  top: 35vh;
+}
+#welcomePage header .headerText {
   text-align: left;
   margin-top: 30vh;
-  margin-left: 450px;
+  margin-left: 400px;
+  z-index: 10;
 }
 
-#blogPage .headerText {
+#blogPage header {
+  background-image: url(../assets/images/blog-image-1.jpg);
+  height: 60vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#blogPage header .headerText {
   margin-top: 15vh;
   margin-left: 200px;
+}
+
+#contactPage header {
+  background-image: url(../assets/images/contact-image-1.jpg);
+  height: 80vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #contactPage .headerText {
@@ -510,17 +520,132 @@ footer p {
   margin: 0;
 }
 
-#imagesContainer,
+#imagesGallery,
 #planAhead,
 #newLocations {
-  background-color: aquamarine;
+  background-color: #d2f9f1;
 }
 
+#visitGuyana {
+  height: 460px;
+}
+#visitGuyana .wrapper {
+  margin-top: 20vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#visitGuyana .visitGuyanaContent {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+#visitGuyana .visitGuyanaImageContainer img {
+  -webkit-box-shadow: -15px 15px #50e3c2;
+          box-shadow: -15px 15px #50e3c2;
+}
+#visitGuyana h4 {
+  margin-bottom: 20px;
+}
+
+#imagesGallery {
+  height: 500px;
+}
+#imagesGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+#imagesGallery ul li {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  padding: 50px 15px;
+}
+
+.secondNav {
+  height: 350px;
+  margin: 30px 0;
+}
+.secondNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.secondNav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.secondNav ul li .seconNavIcon {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+.secondNav ul li .seconNavText {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  padding-left: 10px;
+}
+.secondNav ul li .seconNavText h6 {
+  color: #0c5f4c;
+  margin-top: -15px;
+}
 .secondNav i::before {
   font-family: FontAwesome;
+  font-style: normal;
+  color: white;
   padding: 15px;
   border-radius: 50%;
-  background-color: blue;
+  background-color: #50e3c2;
+}
+
+#planAhead,
+#newLocations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.planAheadImageContainer,
+.planAheadTextContainer,
+.newLocationsImageContainer,
+.newLocationsTextContainer {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.planAheadImageContainer {
+  position: relative;
+  top: -25px;
+  -webkit-box-shadow: 15px 15px #50e3c2;
+          box-shadow: 15px 15px #50e3c2;
+}
+
+.planAheadTextContainer {
+  padding: 60px 60px 50px 0;
+}
+
+.newLocationsTextContainer {
+  padding: 50px 0 50px 60px;
+  text-align: right;
+}
+
+.newLocationsImageContainer {
+  position: relative;
+  top: 25px;
+  -webkit-box-shadow: -15px 15px #50e3c2;
+          box-shadow: -15px 15px #50e3c2;
 }
 
 #blogPage main {
@@ -618,8 +743,8 @@ p {
   padding-right: 20px;
 }
 .comments .userComments .userCommentContainer {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
 }
 .comments .userComments .userCommentContainer p {
   margin-bottom: 0;

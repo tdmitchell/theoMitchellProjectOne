@@ -40,33 +40,38 @@
     </nav>
 
     <div class="wrapper">
-      <div class="headerText center">
+      <div class="imagesContainer">
+        <img src="./assets/images/header-box.jpg" alt="Open sunglasses lying on the sand.">
+      </div><!-- /.imagesContainer -->
+
+      <div class="headerText">
         <h3>welcome to</h3>
         <h1>Beachstays</h1>
       </div>
 
-      <div class="visitGuyanaImage1">
-        <img src="./assets/images/header-box.jpg" alt="XXXXXX">
-      </div><!-- ./visitGuyanaImage1 -->
-    </div> <!-- ./wrapper -->
+    </div> <!-- /.wrapper -->
   </header>
 
   <main>
-    <section class="visitGuyana">
+    <section id="visitGuyana">
       <div class="wrapper">
         <div class="visitGuyanaContent">
-          <p>Visit Guyana</p>
-          <p class="comm">asdada dada sd adasd asda adsd asdasdd as da d aslkdjs salkdj lsakjd lksajd lkas jdlkajdlajsd
-            lkajd lkasjld kjalsdj lakjd lkasj dlkajsld jasldj lajs dlajsdlkj aldksajd lkajsdlksajdl asjdlajsdla</p>
+          <h4>Visit Guyana</h4>
+          <p class="comm">Proin malesuada massa ac magna viverra mollis. Nullam rutrum urna sit amet nibh cursus,
+            porta lectus lobortis. Aliquam sagittis dictum porta. Morbi vitae interdum tortor. Integer in mi vestibulum,
+            nulla vitae, porta lacus. Nam faucibus, massa sit amet consectetur convallis, tellus sem egestas elit, et
+            vulputate sapien elit at nisi.sollicitudin lacus quis, vulputate elit. Maecenas facilisis, nunc in rhoncus
+            tempor, risus nibh fermentum elit, ac condimentum turpis libero eget.</p>
           <a href="#" class="likeButton">Find out more</a>
-        </div><!-- ./visitGuyanaContent -->
-        <div class="visitGuyanaImage2">
+        </div><!-- /.visitGuyanaContent -->
+        <div class="visitGuyanaImageContainer">
           <img src="./assets/images/small-box.jpg" alt="XXXXXX">
-        </div><!-- ./visitGuyanaImage2 -->
-      </div><!-- ./wrapper -->
+        </div><!-- /.visitGuyanaImageContainer -->
+      </div><!-- /.wrapper -->
     </section>
 
-    <section id="imagesContainer" class="gallery">
+    <!-- <section id="imagesGallery" class="gallery"> -->
+    <section id="imagesGallery">
       <div class="wrapper">
         <ul>
           <li><img src="./assets/images/gallery-image1.jpg" alt="XXX"></li>
@@ -80,54 +85,104 @@
       <div class="wrapper">
         <nav class="menu secondNav">
           <ul>
-            <li><a href="#"><i class="fa-solid fa-book-open"></i>Beach houses</a>
-              <p>kjasdf skjdhf sjhd fkhs kdhfks dhfk sdhkfh skdh fkshd fkshdk fhsdkhfkd hskf hdksdjh fks hdkjfh skjdh
-                fkjsdhfkshdf s</p>
-            </li>
-            </li>
-            <li><a href="#"><i class="fa-solid fa-book-open"></i>Community</a>
-              <p>kjasdf skjdhf sjhd fkhs kdhfks dhfk sdhkfh skdh fkshd fkshdk fhsdkhfkd hskf hdksdjh fks hdkjfh skjdh
-                fkjsdhfkshdf s</p>
-            </li>
-            </li>
-            <li><a href="#"><i class="fa-solid fa-book-open"></i>Blog</a>
-              <p>kjasdf skjdhf sjhd fkhs kdhfks dhfk sdhkfh skdh fkshd fkshdk fhsdkhfkd hskf hdksdjh fks hdkjfh skjdh
-                fkjsdhfkshdf s</p>
-            </li>
-            </li>
             <li>
-              <a href="#"><i class="fa-solid fa-book-open"></i>Get in Touch</a>
-              <p>kjasdf skjdhf sjhd fkhs kdhfks dhfk sdhkfh skdh fkshd fkshdk fhsdkhfkd hskf hdksdjh fks hdkjfh skjdh
-                fkjsdhfkshdf s</p>
+              <div class="seconNavIcon">
+                <a href="#">
+                  <i class="fa-solid fa-house-chimney"></i>
+                  <!-- <i class="fa-duotone fa-house"></i>                            NOT WORKING-->
+                </a>
+              </div>
+              <div class="seconNavText">
+                <a href="#">
+                  <h6>Beach houses</h6>
+                </a>
+                <p>Vestibulum ligula ligula,
+                  efficitudui in, laoreet lobortis ligula. Mauris gravida dui non lacus commodo, nec
+                  fringilla.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="seconNavIcon">
+                <a href="#">
+                  <i class="fa-solid fa-users"></i>
+                </a>
+              </div>
+              <div class="seconNavText">
+                <a href="#">
+                  <h6>Community</h6>
+                </a>
+                <p>Nulla condimentum leo non lorem vehicula, placerat gravida erat fringilla. Donec elementum
+                  felis viverra,
+                  placerat metus
+                  eget.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="seconNavIcon">
+                <a href="#">
+                  <i class="fa-solid fa-file"></i>
+                  <!-- <i class="fa-solid fa-phone-flip"></i> -->
+                </a>
+              </div>
+              <div class="seconNavText">
+                <a href="#">
+                  <h6>Blog</h6>
+                </a>
+                <p>Nunc et tempus sapien, non pharetra nibh. Vestibulum fringilla at risus in lobortis.
+                  Pellentesque
+                  dignissim neque arcu.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="seconNavIcon">
+                <a href="#">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+              </div>
+              <div class="seconNavText">
+                <a href="#">
+                  <h6>Get in Touch</h6>
+                </a>
+                <p>Aliquam sagittis dictum porta. Morbi vitaedg interdum tortor. Integer in mi vestibulum,
+                  consequat
+                  nulla vitae,
+                  porta
+                  lacus.
+                </p>
+              </div>
             </li>
           </ul>
         </nav>
       </div><!-- ./wrapper -->
     </section>
 
-
-
     <section id="planAhead">
-      <div class="wrapper">
-        <div class="planAheadImageContainer">
-          <img src="./assets/images/left-image.jpg" alt="XXXXXX">
-        </div> <!-- ./planAheadImageContainer -->
-        <div class="planAheadTextContainer ">
-          <h2>Plan aheads</h2>
-          <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            egestas placerat porttitor. Quisque ultricies odio vel.
-          </p>
-          <a href="#header" class="likeButton">Read more</a>
-        </div> <!-- ./planAheadTextContainer -->
-      </div> <!-- ./wrapper -->
+      <!-- <div class="wrapper"> -->
+      <div class="planAheadImageContainer">
+        <img src="./assets/images/left-image.jpg" alt="XXXXXX">
+      </div> <!-- ./planAheadImageContainer -->
+      <div class="planAheadTextContainer ">
+        <h5>Plan aheads</h5>
+        <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          egestas placerat porttitor. Quisque ultricies odio vel.
+        </p>
+        <a href="#header" class="likeButton">Read more</a>
+      </div> <!-- ./planAheadTextContainer -->
+      <!-- </div> ./wrapper -->
     </section>
 
     <section id="newLocations">
       <!-- <div class="wrapper"> -->
       <div class="newLocationsTextContainer ">
-        <h2>New locations</h2>
-        <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          egestas placerat porttitor. Quisque ultricies odio vel.
+        <h5>New locations</h5>
+        <p class="center">Lorem ipsum dolor sit amet, consectetur adipisc elit. Donec
+          egestas placerat porttitor. Quisque ultricies odio vel. Sed urna et.
         </p>
         <a href="#header" class="likeButton">Read more</a>
       </div> <!-- ./newLocationsTextContainer -->
@@ -137,6 +192,9 @@
 
       <!-- </div> ./wrapper -->
     </section>
+
+
+
 
     <section class="banner">
       <img src="./assets/images/banner-image.jpg" alt="XXXXXX">
