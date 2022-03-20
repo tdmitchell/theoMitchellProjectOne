@@ -467,8 +467,8 @@ img {
 
 #welcomePage header {
   background-image: url(../assets/images/home-image-1.jpg);
-  height: 100vh;
-  background-size: 100%;
+  height: 600px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 #welcomePage header .imagesContainer {
@@ -476,35 +476,34 @@ img {
   max-width: 700px;
   position: absolute;
   left: 0;
-  top: 35vh;
+  top: 200px;
 }
 #welcomePage header .headerText {
   text-align: left;
-  margin-top: 30vh;
-  margin-left: 400px;
+  padding-top: 200px;
+  padding-left: 420px;
   z-index: 10;
 }
 
 #blogPage header {
   background-image: url(../assets/images/blog-image-1.jpg);
-  height: 60vh;
-  background-size: 100%;
+  height: 400px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 #blogPage header .headerText {
-  margin-top: 15vh;
+  margin-top: 150px;
   margin-left: 200px;
 }
 
 #contactPage header {
   background-image: url(../assets/images/contact-image-1.jpg);
-  height: 80vh;
-  background-size: 100%;
+  height: 400px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
-
-#contactPage .headerText {
-  margin-top: 25vh;
+#contactPage header .headerText {
+  margin-top: 100px;
   margin-left: 130px;
 }
 
@@ -530,7 +529,7 @@ footer p {
   height: 460px;
 }
 #visitGuyana .wrapper {
-  margin-top: 20vh;
+  margin-top: 200px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -905,16 +904,18 @@ p {
           justify-content: space-between;
 }
 .messageForm .nameEmailContainer,
-.messageForm .messageContainer,
-.messageForm .commentContainer,
-.commentForm .nameEmailContainer,
-.commentForm .messageContainer,
-.commentForm .commentContainer {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+.commentForm .nameEmailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.messageForm .nameEmailContainer input,
+.commentForm .nameEmailContainer input {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
 }
 .messageForm button,
 .commentForm button {
@@ -928,4 +929,74 @@ p {
   padding: 40px;
   -webkit-box-shadow: 15px 15px #50e3c2;
           box-shadow: 15px 15px #50e3c2;
+}
+
+@media (max-width: 1070px) {
+  #contactPage #header {
+    width: 100%;
+  }
+  #contactPage #header .headerText {
+    margin: 30px auto;
+  }
+  #contactPage #header .headerText h2 {
+    font-size: 3rem;
+  }
+  #contactPage main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contactPage main .messageForm {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #contactPage main .companyInfo {
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  #contactPage #header .navBar {
+    display: none;
+  }
+  #contactPage #header .hamburgerMenu {
+    display: contents;
+  }
+  #contactPage #header .hamburgerMenu .showIcon {
+    padding-top: 10px;
+  }
+  #contactPage #header .headerText {
+    margin-top: 40px;
+  }
+  #contactPage #header .headerText h2 {
+    font-size: 2rem;
+  }
+  #contactPage main .sendMessageForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contactPage main .sendMessageForm .nameEmailContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contactPage main .sendMessageForm .nameEmailContainer input {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  #contactPage #header .headerText {
+    margin-top: 40px;
+  }
+  #contactPage #header .headerText h2 {
+    font-size: 1.2rem;
+  }
 }

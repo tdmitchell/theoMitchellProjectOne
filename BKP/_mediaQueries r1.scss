@@ -31,17 +31,6 @@
 @media (max-width: 700px) {
   #contactPage {
     #header {
-      .navBar {
-        display: none;
-      }
-
-      .hamburgerMenu {
-        display: contents;
-        .showIcon {
-          padding-top: 10px;
-        }
-      }
-
       .headerText {
         margin-top: 40px;
 
@@ -50,18 +39,14 @@
         }
       }
     }
-
     main {
-      .sendMessageForm {
+      .messageForm {
         flex-direction: column;
 
-        .nameEmailContainer {
-          display: flex;
-          flex-direction: column;
+        width: 100%;
 
-          input {
-            width: 100%;
-          }
+        input {
+          width: 100%;
         }
       }
     }
@@ -69,14 +54,12 @@
 }
 
 @media (max-width: 400px) {
-  #contactPage {
-    #header {
-      .headerText {
-        margin-top: 40px;
+  #header {
+    .headerText {
+      margin-top: 40px;
 
-        h2 {
-          font-size: 1.2rem;
-        }
+      h2 {
+        font-size: 1.5rem;
       }
     }
   }

@@ -56,11 +56,13 @@
     justify-content: space-between;
   }
 
-  .nameEmailContainer,
-  .messageContainer,
-  .commentContainer {
-    flex-basis: 45%;
+  .nameEmailContainer {
+    display: flex;
     justify-content: space-between;
+
+    input {
+      flex-basis: 48%;
+    }
   }
 
   button {
