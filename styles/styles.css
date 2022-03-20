@@ -956,6 +956,64 @@ p {
   #contactPage main .companyInfo {
     text-align: center;
   }
+
+  #blogPage #header {
+    width: 100%;
+  }
+  #blogPage #header .headerText {
+    margin: 60px auto;
+  }
+  #blogPage #header .headerText h2 {
+    font-size: 3rem;
+  }
+  #blogPage main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #blogPage main .blogImageContainer {
+    height: 300px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  #blogPage main .blogTextContainer {
+    width: 90%;
+    margin: 20px auto;
+    padding: 0;
+    right: 0;
+    text-align: center;
+    border: none;
+  }
+  #blogPage main .ourMissionRecentPosts {
+    padding: 0;
+  }
+  #blogPage main .ourMissionRecentPosts .ourMissionTextContainer {
+    width: 90%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  #blogPage main .ourMissionRecentPosts .ourMissionImageContainer {
+    width: 200px;
+    margin: 0 auto 30px;
+  }
+  #blogPage main .ourMissionRecentPosts .recentPosts {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #blogPage main .comments,
+#blogPage main .commentForm {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+  #blogPage main .comments h6,
+#blogPage main .commentForm h6 {
+    text-align: center;
+    margin-top: 30px;
+  }
 }
 @media (max-width: 700px) {
   #contactPage #header .navBar {
@@ -991,6 +1049,77 @@ p {
   #contactPage main .sendMessageForm .nameEmailContainer input {
     width: 100%;
   }
+
+  #blogPage #header .navBar {
+    display: none;
+  }
+  #blogPage #header .hamburgerMenu {
+    display: contents;
+  }
+  #blogPage #header .hamburgerMenu .showIcon {
+    padding-top: 10px;
+  }
+  #blogPage #header .headerText {
+    margin: 90px auto;
+  }
+  #blogPage main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #blogPage main .blogImageContainer {
+    display: none;
+  }
+  #blogPage main .blogTextContainer {
+    margin-top: 70px;
+  }
+  #blogPage main .ourMissionImageContainer {
+    width: 200px;
+    margin: 0 auto 30px;
+  }
+  #blogPage main .recentPosts {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #blogPage .comments,
+#blogPage .commentForm {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+}
+@media (max-width: 500px) {
+  #blogPage .logo {
+    font-size: 1rem;
+  }
+  #blogPage .comments h6 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  #blogPage .comments .userComments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #blogPage .comments .userComments .userImageContainer {
+    width: 100px;
+    margin: 0 auto 30px;
+  }
+
+  .commentForm .nameEmailContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media (max-width: 400px) {
   #contactPage #header .headerText {
@@ -998,5 +1127,15 @@ p {
   }
   #contactPage #header .headerText h2 {
     font-size: 1.2rem;
+  }
+
+  .detailedTrip {
+    position: static;
+  }
+  .detailedTrip #blogPage .blogImageContainer {
+    display: none;
+  }
+  .detailedTrip #blogPage .blogTextContainer {
+    margin-top: 130px;
   }
 }
