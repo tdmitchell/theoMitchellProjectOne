@@ -102,7 +102,7 @@
   flex-basis: 40%;
 }
 
-.planAheadImageContainer {
+.planAheadImageContainer img {
   position: relative;
   top: -25px;
   box-shadow: 15px 15px $greenishCyan;
@@ -117,16 +117,32 @@
   text-align: right;
 }
 
-.newLocationsImageContainer {
+.newLocationsImageContainer img {
   position: relative;
   top: 25px;
   box-shadow: -15px 15px $greenishCyan;
 }
-
 // ----------------------------- END ----------------------------------
 
-// ----------------------------- END ----------------------------------
+// 1.6 FreeTrip Section
+#freeTrip {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  margin: 50px auto;
+  text-align: center;
 
-// ----------------------------- END ----------------------------------
+  h5 {
+    color: $spruce;
+  }
 
+  p {
+    margin-bottom: 10px;
+  }
+
+  a {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
 // ----------------------------- END ----------------------------------

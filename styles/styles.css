@@ -625,7 +625,7 @@ footer p {
       flex-basis: 40%;
 }
 
-.planAheadImageContainer {
+.planAheadImageContainer img {
   position: relative;
   top: -25px;
   -webkit-box-shadow: 15px 15px #50e3c2;
@@ -641,11 +641,34 @@ footer p {
   text-align: right;
 }
 
-.newLocationsImageContainer {
+.newLocationsImageContainer img {
   position: relative;
   top: 25px;
   -webkit-box-shadow: -15px 15px #50e3c2;
           box-shadow: -15px 15px #50e3c2;
+}
+
+#freeTrip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px auto;
+  text-align: center;
+}
+#freeTrip h5 {
+  color: #0c5f4c;
+}
+#freeTrip p {
+  margin-bottom: 10px;
+}
+#freeTrip a {
+  width: 300px;
+  margin: 0 auto;
 }
 
 #blogPage main {
