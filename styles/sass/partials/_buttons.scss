@@ -16,6 +16,11 @@
 .nav {
   display: inherit;
   text-decoration: none;
+  // color: $iceBlue;
+
+  // .showIcon {
+  //   color: $iceBlue;
+  // }
 
   &:hover,
   &:focus {
@@ -23,9 +28,11 @@
   }
 }
 
-.hamburgerMenu {
-  //--------------                                    CODE TO HIDE IT HERE
-}
+// .hamburgerMenu {
+//   //   display: none;
+//   //                            FIND BETTER SOLUTION TO HIDE
+//   color: $iceBlue;
+// }
 
 .linkType {
   color: $twilightBlue;

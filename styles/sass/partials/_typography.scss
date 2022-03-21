@@ -118,6 +118,7 @@ h6 {
 
 .date {
   color: $twilightBlue;
+  font-weight: bold;
   // font-style: italic;
 
   span {
@@ -125,6 +126,12 @@ h6 {
   }
 }
 
-.linkType {
+.linkType2 {
   color: $spruce;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: $greenishCyan;
+  }
 }

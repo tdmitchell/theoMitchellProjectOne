@@ -102,34 +102,11 @@
   #welcomePage {
     #header {
       .headerText {
-        margin: 0 auto;
-        // display: none;
+        display: none;
       }
 
       .imagesContainer {
         display: none;
-      }
-
-      input[type="checkbox"],
-      label[for="openSidebarMenu"] {
-        display: block;
-        position: fixed;
-        top: 15px;
-        right: 20px;
-      }
-
-      input[type="checkbox"] {
-        opacity: 0;
-      }
-
-      .menu .wrapper .slideMenu {
-        flex-direction: column;
-        position: fixed;
-        right: -1000px;
-      }
-
-      input[type="checkbox"]:checked ~ .slideMenu {
-        right: 0;
       }
     }
 
@@ -247,29 +224,20 @@
     //   padding: 50px;
     // }
   }
-
-  footer {
-    text-align: center;
-    .p {
-      padding: 0;
-    }
-  }
 }
 
 @media (max-width: 700px) {
   #contactPage {
     #header {
-      // .hamburgerMenu {
-      //   display: contents;
-      //   .showIcon {
-      //     padding-top: 10px;
-      //   }
-      // }
-      .slideMenu {
-        position: absolute;
-        right: -1500px;
-        flex-direction: column;
-        color: red;
+      .navBar {
+        display: none;
+      }
+
+      .hamburgerMenu {
+        display: contents;
+        .showIcon {
+          padding-top: 10px;
+        }
       }
 
       .headerText {
@@ -299,16 +267,16 @@
 
   #blogPage {
     #header {
-      // .navBar {
-      //   display: none;
-      // }
+      .navBar {
+        display: none;
+      }
 
-      // .hamburgerMenu {
-      //   display: contents;
-      //   .showIcon {
-      //     padding-top: 10px;
-      //   }
-      // }
+      .hamburgerMenu {
+        display: contents;
+        .showIcon {
+          padding-top: 10px;
+        }
+      }
 
       .headerText {
         margin: 90px auto;
@@ -348,39 +316,13 @@
 
   #welcomePage {
     #header {
-      // .hamburgerMenu {
-      //   display: contents;
-      //   .showIcon {
-      //     padding-top: 10px;
-      //   }
-      // }
-      .slideMenu {
-        position: absolute;
-        right: -1500px;
-        flex-direction: column;
-        color: red;
+      .navBar {
+        display: none;
       }
 
-      .headerText {
-        margin-top: 40px;
-
-        h2 {
-          font-size: 2rem;
-        }
+      .hamburgerMenu {
+        display: contents;
       }
-
-      // .navBar {
-      //   display: none;
-      // }
-
-      // .hamburgerMenu {
-      //   display: contents;
-      // }
-    }
-
-    #visitGuyana {
-      height: 50%;
-      padding-bottom: 50px;
     }
 
     #imagesGallery li {
@@ -390,19 +332,13 @@
     }
 
     #planAhead {
-      width: 100%;
+      width: 90%;
     }
 
     #freeTrip {
       width: 90%;
     }
   }
-
-  // .slideMenu {
-  //   position: absolute;
-  //   right: -1500px;
-  //   flex-direction: column;
-  // }
 }
 
 @media (max-width: 600px) {
@@ -465,8 +401,4 @@
   //     font-size: 0.8rem;
   //   }
   // }
-
-  footer {
-    font-size: small;
-  }
 }

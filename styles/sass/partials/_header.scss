@@ -5,7 +5,12 @@
   .wrapper {
     justify-content: space-between;
 
-    .navBar ul {
+    input[type="checkbox"],
+    label[for="openSidebarMenu"] {
+      display: none;
+    }
+
+    .slideMenu {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -14,10 +19,6 @@
         padding-left: 30px;
       }
     }
-  }
-
-  .hamburgerMenu {
-    display: none; //                                   FIND BETTER SOLUTION TO HIDE
   }
 }
 // ----------------------------- END ----------------------------------
@@ -41,6 +42,10 @@
     text-align: left;
     padding-top: 200px;
     padding-left: 420px;
+
+    position: relative;
+    right: 50;
+
     z-index: 10;
   }
 }
