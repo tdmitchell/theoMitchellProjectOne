@@ -443,6 +443,10 @@ img {
   opacity: 0.3;
 }
 
+.showIcon {
+  color: #fafffe;
+}
+
 .menu {
   padding-top: 30px;
 }
@@ -478,16 +482,16 @@ img {
   background-repeat: no-repeat;
 }
 #welcomePage header .imagesContainer {
-  width: 600px;
-  max-width: 700px;
+  width: 80vh;
+  max-width: 100vh;
   position: absolute;
   left: 0;
   top: 200px;
 }
 #welcomePage header .headerText {
   text-align: left;
-  padding-top: 200px;
-  padding-left: 420px;
+  padding-top: 15%;
+  padding-left: 25%;
   position: relative;
   right: 50;
   z-index: 10;
@@ -941,6 +945,14 @@ p {
           box-shadow: 15px 15px #50e3c2;
 }
 
+@media (max-width: 1200px) {
+  #welcomePage header .headerText {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+  }
+}
 @media (max-width: 1070px) {
   #contactPage #header {
     width: 100%;
@@ -1025,32 +1037,18 @@ p {
     margin-top: 30px;
   }
 
-  #welcomePage #header .headerText {
+  #welcomePage header .headerText {
     margin: 0 auto;
+    margin-top: 40px;
   }
-  #welcomePage #header .imagesContainer {
+  #welcomePage header .headerText h1 {
+    font-size: 3rem;
+  }
+  #welcomePage header .headerText h3 {
+    font-size: 2.5rem;
+  }
+  #welcomePage header .imagesContainer {
     display: none;
-  }
-  #welcomePage #header input[type=checkbox],
-#welcomePage #header label[for=openSidebarMenu] {
-    display: block;
-    position: fixed;
-    top: 15px;
-    right: 20px;
-  }
-  #welcomePage #header input[type=checkbox] {
-    opacity: 0;
-  }
-  #welcomePage #header .menu .wrapper .slideMenu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: fixed;
-    right: -1000px;
-  }
-  #welcomePage #header input[type=checkbox]:checked ~ .slideMenu {
-    right: 0;
   }
   #welcomePage #visitGuyana {
     margin: 0 auto;
@@ -1136,8 +1134,61 @@ p {
     padding: 0;
   }
 }
+@media (max-width: 900px) {
+  .headerText {
+    margin-top: 40px;
+  }
+  .headerText h1 {
+    font-size: 2.2rem;
+  }
+  .headerText h3 {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 700px) {
-  #contactPage #header .slideMenu {
+  #contactPage header input[type=checkbox],
+#contactPage header label[for=openSidebarMenu] {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 33px;
+    right: 15px;
+    background-color: #fafffe;
+    opacity: 60%;
+    z-index: 20;
+    text-align: center;
+  }
+  #contactPage header input[type=checkbox] i,
+#contactPage header label[for=openSidebarMenu] i {
+    color: #2c2c2c;
+    z-index: 15;
+  }
+  #contactPage header input[type=checkbox] {
+    opacity: 0;
+  }
+  #contactPage header .slideMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 130px;
+    height: 150px;
+    position: fixed;
+    right: -150px;
+    top: 77px;
+    background-color: #fafffe;
+    opacity: 60%;
+    z-index: 20;
+  }
+  #contactPage header .slideMenu a {
+    color: #2c2c2c;
+    z-index: 15;
+  }
+  #contactPage header input[type=checkbox]:checked ~ .slideMenu {
+    right: 15px;
+  }
+  #contactPage header .slideMenu {
     position: absolute;
     right: -1500px;
     -webkit-box-orient: vertical;
@@ -1146,10 +1197,10 @@ p {
             flex-direction: column;
     color: red;
   }
-  #contactPage #header .headerText {
+  #contactPage header .headerText {
     margin-top: 40px;
   }
-  #contactPage #header .headerText h2 {
+  #contactPage header .headerText h2 {
     font-size: 2rem;
   }
   #contactPage main .sendMessageForm {
@@ -1171,7 +1222,49 @@ p {
     width: 100%;
   }
 
-  #blogPage #header .headerText {
+  #blogPage header input[type=checkbox],
+#blogPage header label[for=openSidebarMenu] {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 33px;
+    right: 15px;
+    background-color: #fafffe;
+    opacity: 60%;
+    z-index: 20;
+    text-align: center;
+  }
+  #blogPage header input[type=checkbox] i,
+#blogPage header label[for=openSidebarMenu] i {
+    color: #2c2c2c;
+    z-index: 15;
+  }
+  #blogPage header input[type=checkbox] {
+    opacity: 0;
+  }
+  #blogPage header .slideMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 130px;
+    height: 150px;
+    position: fixed;
+    right: -150px;
+    top: 77px;
+    background-color: #fafffe;
+    opacity: 60%;
+    z-index: 20;
+  }
+  #blogPage header .slideMenu a {
+    color: #2c2c2c;
+    z-index: 15;
+  }
+  #blogPage header input[type=checkbox]:checked ~ .slideMenu {
+    right: 15px;
+  }
+  #blogPage header .headerText {
     margin: 90px auto;
   }
   #blogPage main {
@@ -1201,19 +1294,55 @@ p {
     margin: 0 auto 30px;
   }
 
-  #welcomePage #header .slideMenu {
-    position: absolute;
-    right: -1500px;
+  #welcomePage header input[type=checkbox],
+#welcomePage header label[for=openSidebarMenu] {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 33px;
+    right: 15px;
+    background-color: #fafffe;
+    opacity: 60%;
+    z-index: 20;
+    text-align: center;
+  }
+  #welcomePage header input[type=checkbox] i,
+#welcomePage header label[for=openSidebarMenu] i {
+    color: #2c2c2c;
+    z-index: 15;
+  }
+  #welcomePage header input[type=checkbox] {
+    opacity: 0;
+  }
+  #welcomePage header .slideMenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    color: red;
+    width: 130px;
+    height: 150px;
+    position: fixed;
+    right: -150px;
+    top: 77px;
+    background-color: #fafffe;
+    opacity: 60%;
+    z-index: 20;
   }
-  #welcomePage #header .headerText {
+  #welcomePage header .slideMenu a {
+    color: #2c2c2c;
+    z-index: 15;
+  }
+  #welcomePage header input[type=checkbox]:checked ~ .slideMenu {
+    right: 15px;
+  }
+  #welcomePage header .headerText {
     margin-top: 40px;
   }
-  #welcomePage #header .headerText h2 {
+  #welcomePage header .headerText h1 {
+    font-size: 2.5rem;
+  }
+  #welcomePage header .headerText h3 {
     font-size: 2rem;
   }
   #welcomePage #visitGuyana {
@@ -1261,6 +1390,15 @@ p {
             flex-direction: column;
   }
 
+  #welcomePage header .headerText {
+    margin-top: 40px;
+  }
+  #welcomePage header .headerText h1 {
+    font-size: 2rem;
+  }
+  #welcomePage header .headerText h3 {
+    font-size: 1.7rem;
+  }
   #welcomePage #imagesGallery li {
     display: none;
     padding: 5px;

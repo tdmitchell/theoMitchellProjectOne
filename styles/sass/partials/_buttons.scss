@@ -18,10 +18,6 @@
   text-decoration: none;
   // color: $iceBlue;
 
-  // .showIcon {
-  //   color: $iceBlue;
-  // }
-
   &:hover,
   &:focus {
     color: $greenishCyan;
@@ -41,4 +37,8 @@
   &:focus {
     opacity: 0.3;
   }
+}
+
+.showIcon {
+  color: $iceBlue;
 }

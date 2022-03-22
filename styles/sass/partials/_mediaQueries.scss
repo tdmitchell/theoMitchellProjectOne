@@ -1,3 +1,16 @@
+@media (max-width: 1200px) {
+  #welcomePage {
+    header {
+      .headerText {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
 @media (max-width: 1070px) {
   #contactPage {
     #header {
@@ -100,37 +113,46 @@
   }
 
   #welcomePage {
-    #header {
+    header {
       .headerText {
         margin: 0 auto;
-        // display: none;
+
+        margin-top: 40px;
+        h1 {
+          font-size: 3rem;
+        }
+        h3 {
+          font-size: 2.5rem;
+        }
       }
 
+      // ??????ADD A MAIN HERE
       .imagesContainer {
         display: none;
       }
 
-      input[type="checkbox"],
-      label[for="openSidebarMenu"] {
-        display: block;
-        position: fixed;
-        top: 15px;
-        right: 20px;
-      }
+      // // AQUI
+      // input[type="checkbox"],
+      // label[for="openSidebarMenu"] {
+      //   display: block;
+      //   position: fixed;
+      //   top: 15px;
+      //   right: 20px;
+      // }
 
-      input[type="checkbox"] {
-        opacity: 0;
-      }
+      // input[type="checkbox"] {
+      //   opacity: 0;
+      // }
 
-      .menu .wrapper .slideMenu {
-        flex-direction: column;
-        position: fixed;
-        right: -1000px;
-      }
+      // .menu .wrapper .slideMenu {
+      //   flex-direction: column;
+      //   position: fixed;
+      //   right: -1000px;
+      // }
 
-      input[type="checkbox"]:checked ~ .slideMenu {
-        right: 0;
-      }
+      // input[type="checkbox"]:checked ~ .slideMenu {
+      //   right: 0;
+      // }
     }
 
     #visitGuyana {
@@ -215,37 +237,6 @@
         padding: 50px;
       }
     }
-
-    // #planAhead {
-    //   flex-direction: column;
-    //   width: 100%;
-    //   text-align: center;
-    // }
-
-    // #newLocations {
-    //   flex-direction: column-reverse;
-    //   width: 100%;
-    //   text-align: center;
-    // }
-
-    // .planAheadImageContainer,
-    // .newLocationsImageContainer {
-    //   flex-basis: 90%;
-    //   margin: 20px auto;
-
-    //   img {
-    //     top: 0;
-    //     box-shadow: none;
-    //   }
-    // }
-
-    // .planAheadTextContainer,
-    // .newLocationsTextContainer {
-    //   width: 90%;
-    //   text-align: center;
-    //   margin: 0 auto;
-    //   padding: 50px;
-    // }
   }
 
   footer {
@@ -256,15 +247,68 @@
   }
 }
 
+@media (max-width: 900px) {
+  .headerText {
+    margin-top: 40px;
+    h1 {
+      font-size: 2.2rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}
+
 @media (max-width: 700px) {
   #contactPage {
-    #header {
-      // .hamburgerMenu {
-      //   display: contents;
-      //   .showIcon {
-      //     padding-top: 10px;
-      //   }
-      // }
+    header {
+      // AQUI
+      input[type="checkbox"],
+      label[for="openSidebarMenu"] {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 33px;
+        right: 15px;
+        background-color: $iceBlue;
+        opacity: 60%;
+        z-index: 20;
+        text-align: center;
+        i {
+          color: $black;
+          z-index: 15;
+        }
+      }
+
+      input[type="checkbox"] {
+        opacity: 0;
+      }
+
+      .slideMenu {
+        // .menu .wrapper .slideMenu {
+        flex-direction: column;
+        width: 130px;
+        height: 150px;
+
+        position: fixed;
+        right: -150px;
+        top: 77px;
+        // color: $twilightBlue;
+        background-color: $iceBlue;
+        opacity: 60%;
+        z-index: 20;
+        a {
+          color: $black;
+          z-index: 15;
+        }
+      }
+
+      input[type="checkbox"]:checked ~ .slideMenu {
+        right: 15px;
+      }
+      // ---/ ENDS
+
       .slideMenu {
         position: absolute;
         right: -1500px;
@@ -298,17 +342,53 @@
   }
 
   #blogPage {
-    #header {
-      // .navBar {
-      //   display: none;
-      // }
+    header {
+      // AQUI
+      input[type="checkbox"],
+      label[for="openSidebarMenu"] {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 33px;
+        right: 15px;
+        background-color: $iceBlue;
+        opacity: 60%;
+        z-index: 20;
+        text-align: center;
+        i {
+          color: $black;
+          z-index: 15;
+        }
+      }
 
-      // .hamburgerMenu {
-      //   display: contents;
-      //   .showIcon {
-      //     padding-top: 10px;
-      //   }
-      // }
+      input[type="checkbox"] {
+        opacity: 0;
+      }
+
+      .slideMenu {
+        // .menu .wrapper .slideMenu {
+        flex-direction: column;
+        width: 130px;
+        height: 150px;
+
+        position: fixed;
+        right: -150px;
+        top: 77px;
+        // color: $twilightBlue;
+        background-color: $iceBlue;
+        opacity: 60%;
+        z-index: 20;
+        a {
+          color: $black;
+          z-index: 15;
+        }
+      }
+
+      input[type="checkbox"]:checked ~ .slideMenu {
+        right: 15px;
+      }
+      // ---/ ENDS
 
       .headerText {
         margin: 90px auto;
@@ -347,37 +427,66 @@
   }
 
   #welcomePage {
-    #header {
-      // .hamburgerMenu {
-      //   display: contents;
-      //   .showIcon {
-      //     padding-top: 10px;
-      //   }
-      // }
-      .slideMenu {
-        position: absolute;
-        right: -1500px;
-        flex-direction: column;
-        color: red;
-      }
-
-      .headerText {
-        margin-top: 40px;
-
-        h2 {
-          font-size: 2rem;
+    header {
+      // AQUI
+      input[type="checkbox"],
+      label[for="openSidebarMenu"] {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 33px;
+        right: 15px;
+        background-color: $iceBlue;
+        opacity: 60%;
+        z-index: 20;
+        text-align: center;
+        i {
+          color: $black;
+          z-index: 15;
         }
       }
 
-      // .navBar {
-      //   display: none;
-      // }
+      input[type="checkbox"] {
+        opacity: 0;
+      }
 
-      // .hamburgerMenu {
-      //   display: contents;
-      // }
+      .slideMenu {
+        // .menu .wrapper .slideMenu {
+        flex-direction: column;
+        width: 130px;
+        height: 150px;
+
+        position: fixed;
+        right: -150px;
+        top: 77px;
+        // color: $twilightBlue;
+        background-color: $iceBlue;
+        opacity: 60%;
+        z-index: 20;
+        a {
+          color: $black;
+          z-index: 15;
+        }
+      }
+
+      input[type="checkbox"]:checked ~ .slideMenu {
+        right: 15px;
+      }
+      // ---/ ENDS
+
+      .headerText {
+        margin-top: 40px;
+        h1 {
+          font-size: 2.5rem;
+        }
+        h3 {
+          font-size: 2rem;
+        }
+      }
     }
 
+    // COLOCAR UM MAIN --------
     #visitGuyana {
       height: 50%;
       padding-bottom: 50px;
@@ -397,12 +506,6 @@
       width: 90%;
     }
   }
-
-  // .slideMenu {
-  //   position: absolute;
-  //   right: -1500px;
-  //   flex-direction: column;
-  // }
 }
 
 @media (max-width: 600px) {
@@ -438,6 +541,19 @@
   }
 
   #welcomePage {
+    header {
+      .headerText {
+        margin-top: 40px;
+        h1 {
+          font-size: 2rem;
+        }
+        h3 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    // COLOCAR UM MAIN --------
     #imagesGallery li {
       display: none;
       padding: 5px;
