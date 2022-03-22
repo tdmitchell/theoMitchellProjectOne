@@ -1,19 +1,7 @@
-// messageForm
-// commentForm
-
-// sendCommentForm
-// sendMessageForm
-
-// commentContainer
-// messageContainer
-
-// box-shadow
 // 1.5 Form
 .messageForm,
 .commentForm {
-  // background-color: red;
   display: flex;
-  // flex-direction: column;
   width: 50%;
   margin-left: 10%;
   margin-bottom: 60px;
@@ -38,7 +26,6 @@
   }
 
   input {
-    // border: none;
     border-bottom: 2px solid $greenishCyan;
   }
 
@@ -66,7 +53,6 @@
   }
 
   button {
-    // background-color: $twilightBlue;
     line-height: 35px;
   }
 }

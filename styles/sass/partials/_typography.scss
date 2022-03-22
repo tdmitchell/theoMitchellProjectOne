@@ -7,8 +7,6 @@
 // 1.2 Playfair Display SC
 // <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
 
-// font-family: 'Playfair Display SC', serif;
-
 html {
   font-size: 125%;
 }
@@ -40,11 +38,6 @@ body {
 body {
   font-weight: normal;
 }
-
-//  ::placeholder {
-//     font-family: $latoFont;
-//     font-weight: lighter;
-//   }
 
 .nav,
 .likeButton {
@@ -120,7 +113,6 @@ h6 {
 .date {
   color: $twilightBlue;
   font-weight: bold;
-  // font-style: italic;
 
   span {
     font-weight: bold;

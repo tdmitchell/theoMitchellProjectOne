@@ -1,3 +1,6 @@
+// font-family: "Lato", sans-serif;
+// font-family: "Playfair Display SC", serif;
+
 // 1. Variables
 // 1.1 Colors
 $greenishCyan: #50e3c2;
@@ -11,8 +14,7 @@ $spruce: #0c5f4c;
 $playfairDisplaySC: "Playfair Display SC", serif;
 $latoFont: "Lato", sans-serif;
 
-// font-family: "Lato", sans-serif;
-// font-family: "Playfair Display SC", serif;
+// 2 Mixin
 @mixin formStyle {
   font-family: $latoFont;
   font-weight: 100;

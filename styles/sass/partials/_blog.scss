@@ -7,7 +7,6 @@
 // 1.2 blogPost Section
 .blogPost {
   flex-basis: 60%;
-
   position: relative;
   top: -60px;
 }
@@ -24,11 +23,9 @@
 .blogTextContainer {
   position: relative;
   right: -15px;
-
   padding-top: 50px;
   padding-left: 150px;
   padding-right: 50px;
-
   border-right: 5px solid $greenishCyan;
   border-bottom: 5px solid $greenishCyan;
 }
@@ -54,7 +51,6 @@ p {
 
 .ourMissionTextContainer {
   margin-bottom: 30px;
-
   p {
     margin-bottom: 10px;
   }
@@ -73,8 +69,6 @@ p {
 // 1.4 Comments
 .comments {
   width: 50%;
-  // justify-content: start;
-  // display: block;
   flex-direction: column;
   margin-left: 10%;
 
