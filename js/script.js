@@ -50,7 +50,7 @@ function(event){
     // const listItemElement = document.createElement('li');
     // const pElement = document.createElement('p');
     // i) update the value of p with the message
-      const message = `${nameElementValue}, your message was sent to our organization! You will receive an email answering this message soon.`
+      const message = `${nameElementValue}, your message has been sent successfully! You will soon receive an email with the update. Thanks for your message.`
       pElement.textContent = message;
 
     // ii) Append the pElement into the listItemElement    
@@ -69,7 +69,7 @@ function(event){
 
   }else{
 // i) update the value of p with the message
-      const message = `Unfortunatly, your message was not sent. Please complete all fields so we can receive your message.`
+      const message = `Unfortunately, your message was not sent. Please fill in all the fields so that we can send them.`
      
       pElement.textContent = message;
        console.log(pElement);
