@@ -41,7 +41,7 @@ function(event){
   messageElementValue = messageElement.value;
 
   //4.1. Create the HTML to be included to ul.validationMessage 
-    const listItemElement = document.createElement('li');
+    // const listItemElement = document.createElement('li');
     const pElement = document.createElement('p');
 
   // 4. check if each field has a value = Trueffy       //(length !=0)
@@ -53,12 +53,15 @@ function(event){
       const message = `${nameElementValue}, your message has been sent successfully! You will soon receive an email with the update. Thanks for your message.`
       pElement.textContent = message;
 
-    // ii) Append the pElement into the listItemElement    
-      listItemElement.appendChild(pElement);
-      console.log(listItemElement.textContent);
+    // // ii) Append the pElement into the listItemElement    
+    //   listItemElement.appendChild(pElement);
+    //   console.log(listItemElement.textContent);
 
-    // iii) Append the listItemElement into the ul
-       document.querySelector('ul.validationMessage').appendChild(listItemElement);
+    // // iii) Append the listItemElement into the ul
+    //    document.querySelector('ul.validationMessage').appendChild(listItemElement);
+
+    // iii) Append the p into the div.validationMessage
+       document.querySelector('div.validationMessage').appendChild(pElement);
 
       //  console.log(listItemElement);
 
@@ -74,13 +77,15 @@ function(event){
       pElement.textContent = message;
        console.log(pElement);
 
-    // ii) Append the pElement into the listItemElement    
-      listItemElement.appendChild(pElement);
-      console.log(listItemElement);
+    // // ii) Append the pElement into the listItemElement    
+    //   listItemElement.appendChild(pElement);
+    //   console.log(listItemElement);
 
-    // iii) Append the listItemElement into the ul
-       document.querySelector('ul.validationMessage').appendChild(listItemElement);
+    // // iii) Append the listItemElement into the ul
+    //    document.querySelector('ul.validationMessage').appendChild(listItemElement);
 
+       // iii) Append the listItemElement into the ul
+       document.querySelector('div.validationMessage').appendChild(pElement);
 
     // console.log("iS MISSING INFORMATION. MESSAGE NOT SENT.");
   }
