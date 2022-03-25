@@ -40,11 +40,15 @@ function(event){
   emailElementValue = emailElement.value;
   messageElementValue = messageElement.value;
 
-  // 4. check if each field has a value = Trueffy       //(length !=0)
-  if(nameElementValue && emailElementValue && messageElementValue){
-    //4.1. Create the HTML to be included to ul.validationMessage 
+  //4.1. Create the HTML to be included to ul.validationMessage 
     const listItemElement = document.createElement('li');
     const pElement = document.createElement('p');
+
+  // 4. check if each field has a value = Trueffy       //(length !=0)
+  if(nameElementValue && emailElementValue && messageElementValue){
+    // //4.1. Create the HTML to be included to ul.validationMessage 
+    // const listItemElement = document.createElement('li');
+    // const pElement = document.createElement('p');
     // i) update the value of p with the message
       const message = `${nameElementValue}, your message was sent to our organization! You will receive an email answering this message soon.`
       pElement.textContent = message;
@@ -56,7 +60,7 @@ function(event){
     // iii) Append the listItemElement into the ul
        document.querySelector('ul.validationMessage').appendChild(listItemElement);
 
-       console.log(listItemElement);
+      //  console.log(listItemElement);
 
     //Clear the user's information
     nameElement.value = '';
@@ -64,19 +68,21 @@ function(event){
     messageElement.value = '';
 
   }else{
-// // i) update the value of p with the message
-//       const message = `${nameElementValue}, WAS MISSING INFORMATION. MESSAGE NOT SENT.`
-//       pElement.textContent = message;
+// i) update the value of p with the message
+      const message = `Unfortunatly, your message was not sent. Please complete all fields so we can receive your message.`
+     
+      pElement.textContent = message;
+       console.log(pElement);
 
-//     // ii) Append the pElement into the listItemElement    
-//       listItemElement.appendChild(pElement);
-//       console.log(listItemElement.textContent);
+    // ii) Append the pElement into the listItemElement    
+      listItemElement.appendChild(pElement);
+      console.log(listItemElement);
 
-//     // iii) Append the listItemElement into the ul
-//        document.querySelector('ul').appendChild(listItemElement);
+    // iii) Append the listItemElement into the ul
+       document.querySelector('ul.validationMessage').appendChild(listItemElement);
 
 
-    console.log("iS MISSING INFORMATION. MESSAGE NOT SENT.");
+    // console.log("iS MISSING INFORMATION. MESSAGE NOT SENT.");
   }
 
 
