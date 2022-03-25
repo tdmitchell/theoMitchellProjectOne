@@ -800,6 +800,9 @@ p {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
 }
+.messageForm .validationMessage {
+  text-align: center;
+}
 
 .companyInfo {
   display: -webkit-box;

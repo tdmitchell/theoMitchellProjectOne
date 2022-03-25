@@ -1,4 +1,5 @@
 // Pseudo code
+
 // a) Cache selectors
     // 1. Select the form Element
     // 2. Select each field
@@ -21,7 +22,15 @@
 // 1. Select the form Element
 const contactForm = document.querySelector('form');
 
+// 2. Select each field
+const nameElement = document.querySelector('#name');
+const emailElement = document.querySelector('#email');
+const messageElement = document.querySelector('#message');
 
+// Getting fields value entered by user
+nameElementValue = nameElement.value;
+emailElementValue = emailElement.value;
+messageElementValue = messageElement.value;
 
 
 // 3. Create eventListener
@@ -30,18 +39,8 @@ function(event){
   // 3.1. prevent default
   event.preventDefault();
 
-  // 2. Select each field
-  const nameElement = document.querySelector('#name');
-  const emailElement = document.querySelector('#email');
-  const messageElement = document.querySelector('#message');
-
-  // Getting fields value entered by user
-  nameElementValue = nameElement.value;
-  emailElementValue = emailElement.value;
-  messageElementValue = messageElement.value;
-
   // 4. check if each field has a value = Trueffy       //(length !=0)
-  if(nameElementValue && emailElementValue && messageElementValue){
+  if(nameElementValue){
     //4.1. Create the HTML to be included to ul.validationMessage 
     const listItemElement = document.createElement('li');
     const pElement = document.createElement('p');
@@ -54,9 +53,7 @@ function(event){
       console.log(listItemElement.textContent);
 
     // iii) Append the listItemElement into the ul
-       document.querySelector('ul.validationMessage').appendChild(listItemElement);
-
-       console.log(listItemElement);
+       document.querySelector('ul').appendChild(listItemElement);
 
     //Clear the user's information
     nameElement.value = '';
@@ -64,19 +61,7 @@ function(event){
     messageElement.value = '';
 
   }else{
-// // i) update the value of p with the message
-//       const message = `${nameElementValue}, WAS MISSING INFORMATION. MESSAGE NOT SENT.`
-//       pElement.textContent = message;
-
-//     // ii) Append the pElement into the listItemElement    
-//       listItemElement.appendChild(pElement);
-//       console.log(listItemElement.textContent);
-
-//     // iii) Append the listItemElement into the ul
-//        document.querySelector('ul').appendChild(listItemElement);
-
-
-    console.log("iS MISSING INFORMATION. MESSAGE NOT SENT.");
+    console.log("not preenchido");
   }
 
 

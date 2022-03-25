@@ -5,6 +5,10 @@
 
 .messageForm {
   flex-basis: 60%;
+
+  .validationMessage {
+    text-align: center;
+  }
 }
 
 .companyInfo {
