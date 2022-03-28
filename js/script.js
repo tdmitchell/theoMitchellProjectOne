@@ -45,7 +45,7 @@ function(event){
       pElement.textContent = message;
 
     // ii) Show message: Append the p into the div.validationMessage
-       document.querySelector('div.validationMessage').appendChild(pElement);
+       document.querySelector('div.validationMessage');appendChild(pElement);
 
     //Clear the user's information
     nameElement.value = '';
@@ -62,5 +62,3 @@ function(event){
        document.querySelector('div.validationMessage').appendChild(pElement);
   }
 });
-
-
