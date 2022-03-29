@@ -50,18 +50,17 @@
     <section class="messageForm">
       <form action="#" method="post" class="sendMessageForm" name="sendMessageForm">
         <div class="nameEmailContainer">
-          <label for="name" class="sr-only">Name</label>
-          <input type="text" id="name" class="name " placeholder="Name">
-          <label for="email" class="sr-only">Email</label>
-          <input type="email" id="email" class="email " placeholder="Email address">
+          <label for="nameInContact" class="sr-only">Name</label>
+          <input type="text" id="nameInContact" class="nameInContact" placeholder="Name">
+          <label for="emailInContact" class="sr-only">Email</label>
+          <input type="email" id="emailInContact" class="emailInContact" placeholder="Email address">
         </div>
         <div class="messageContainer">
-          <label for="message" class="sr-only">Message</label>
-          <textarea name="message" id="message" class="message" cols="80" rows="8" placeholder="message"></textarea>
+          <label for="messageInContact" class="sr-only">Message</label>
+          <textarea name="messageInContact" id="messageInContact" class="message" cols="80" rows="8"
+            placeholder="message"></textarea>
         </div>
-        <!-- <ul class="validationMessage"> -->
-        <!-- validation message here -->
-        <!-- </ul> -->
+
         <div class="validationMessage">
           <!-- validation message here -->
         </div>
@@ -110,6 +109,7 @@
     </div>
   </footer>
 
+  <!-- Link the JavaScript file -->
   <script src="./js/script.js"></script>
 </body>
 
